@@ -1,0 +1,184 @@
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(#0505e4), color-stop(#00f7ff), to(#10eb10));
+  background: linear-gradient(#0505e4, #00f7ff, #10eb10);
+  margin: auto;
+  height: 100%;
+  width: 95%;
+}
+
+main {
+  background-color: #333;
+  font-size: 15px;
+  text-align: center;
+  height: 100%;
+}
+
+main p {
+  background-color: #333;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  padding-top: 15px;
+}
+
+main .dalej {
+  background-color: #333;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  padding-top: 15px;
+}
+
+main .gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  list-style-type: none;
+}
+
+main .gallery .thumbnail {
+  cursor: pointer;
+  max-width: 258px;
+  max-height: 158px;
+  margin: 18px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+main .gallery .thumbnail :hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+main .gallery .thumbnail img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.popup {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-animation: fadeIn 0.3s;
+          animation: fadeIn 0.3s;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+
+.popup.hidden {
+  display: none;
+}
+
+.popup.fade-out {
+  -webkit-animation: fadeOut 0.3s both;
+          animation: fadeOut 0.3s both;
+}
+
+.popup__img {
+  max-height: 80%;
+  max-width: 80%;
+}
+
+.popup__close {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 128px;
+  position: fixed;
+  right: 64px;
+  top: 64px;
+}
+
+.popup__arrow {
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 128px;
+  height: 128px;
+  line-height: 128px;
+  position: absolute;
+  top: 50%;
+  width: 128px;
+}
+
+.popup__close,
+.popup__arrow {
+  opacity: 0.5;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.popup__close:hover,
+.popup__arrow:hover {
+  opacity: 1;
+}
+
+.popup__arrow--left {
+  left: 5%;
+}
+
+.popup__arrow--right {
+  right: 5%;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
