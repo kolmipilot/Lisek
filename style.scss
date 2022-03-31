@@ -1,69 +1,60 @@
 $bg_main_color: #333;
 
 body {
-   // margin: 2px;
+    // margin: 2px;
     //padding: 20px;
-    background: linear-gradient(rgb(5, 5, 228),rgb(0, 247, 255), rgb(16, 235, 16));
+    background: linear-gradient(rgb(5, 5, 228), rgb(0, 247, 255), rgb(16, 235, 16));
     margin: auto;
     height: 100%;
-    width: 95%
+    width: 95%;
 }
 
-
-
-    
-    
-    
-    
-    
-    main{
-    
-    
+main {
     background-color: $bg_main_color;
     font-size: 15px;
     text-align: center;
-    height:100%;
- p{
-    background-color: $bg_main_color;
-    text-align: center; 
-    color: white;
-    font-size: 40px;
-    padding-top: 15px;
- }
- .dalej{
-    background-color: $bg_main_color;
-    text-align: center; 
-    color: rgb(10, 5, 83);
-    font-size: 20px;
-    padding-top: 15px;
- }
- 
-.gallery{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    //text-align: center;
-    list-style-type: none;
+    height: 100%;
+    p {
+        background-color: $bg_main_color;
+        text-align: center;
+        color: white;
+        font-size: 40px;
+        padding-top: 15px;
+    }
+    .dalej {
+        background-color: $bg_main_color;
+        text-align: center;
+        color: rgb(10, 5, 83);
+        font-size: 20px;
+        padding-top: 15px;
+    }
 
-    .thumbnail{
-        cursor: pointer;
-        max-width: 258px;
-        max-height: 158px;
-        margin: 18px;
-        transform: scale(1);
-        transition: transform 0.3s;
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        //text-align: center;
+        list-style-type: none;
 
-        :hover{
-            transform: scale(1.2);
-        }
+        .thumbnail {
+            cursor: pointer;
+            max-width: 258px;
+            max-height: 158px;
+            margin: 18px;
+            transform: scale(1);
+            transition: transform 0.3s;
 
-        img{
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
+            :hover {
+                transform: scale(1.2);
+            }
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
         }
     }
-}
 }
 
 .popup {
