@@ -1,6 +1,6 @@
 body {
-  background: -webkit-gradient(linear, left top, left bottom, from(#0505e4), color-stop(#00f7ff), to(#10eb10));
-  background: linear-gradient(#0505e4, #00f7ff, #10eb10);
+  background: #9500ff;
+  background: radial-gradient(circle, #9500ff 2%, #0068ff 18%, #808de9 31%, #19b17c 47%, #3acf28 66%, #84f476 81%, #eddada 92%);
   margin: auto;
   height: 100%;
   width: 95%;
@@ -16,7 +16,7 @@ main {
 main p {
   background-color: #333;
   text-align: center;
-  color: #060429;
+  color: #ecda0f;
   font-size: 40px;
   padding-top: 15px;
 }
